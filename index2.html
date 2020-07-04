@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cuestionario</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="cuadro_g">
+        <div class="cuadro_m">
+          <script src="juego.js"></script>
+          <!-- Cuadro de preguntas -->
+        <div class="cuadro_1">
+        <p id="cuadro_1">
+          <script>
+               document.write(preguntas[Q]);
+          </script>
+        </p>
+        </div>
+        <!-- Cuadro de resultado -->
+        <div class="cuadro_2">
+            <p id="cuadro_2"><br><br>
+            <script>
+               document.write(condicion[S]);
+            </script>
+              </p>
+        </div>
+        <!-- Cuadro de opciones -->
+        <div class="cuadro_3"></div>
+        <!-- Cuadro de respuesta1 -->
+        <div class="cuadro_4">
+            <h3>
+                <p id="cuadro_4">
+                <script>
+                    document.write(respuesta[P]);
+                 </script>
+                 </p>
+                 <button class ="boton2" onclick="boton1()"></button>
+
+            </h3>    
+        </div>
+        <!-- Cuadro de respuesta2 -->
+        <div class="cuadro_5">
+            <h3>
+                <p id="cuadro_5">
+                <script>
+                    document.write(respuesta[P+1]);
+                </script>
+                </p>
+            </h3>    
+            <button class ="boton2" onclick="boton2()"></button>
+        </div>
+        <!-- Cuadro de respuesta3 -->
+        <div class="cuadro_6">
+            <h3>
+                <p id="cuadro_6">
+                <script>
+                    document.write(respuesta[P+2]);
+                </script>
+                </p>
+            </h3> 
+            <button class ="boton2" onclick="boton3()"></button>
+        </div>
+        <!-- Cuadro de respuesta4 -->
+        <div class="cuadro_7">
+            <h3>
+                <p id="cuadro_7">
+                <script>
+                    document.write(respuesta[P+3]);
+                </script>
+                </p>
+            </h3> 
+            <button class ="boton2" onclick="boton4()"></button>
+        </div>
+        <!-- Cuadro de siguiente pregunta -->
+        <div class="cuadro_8"><h2><br>Siguiente</h2> 
+         <button class ="boton1" onclick= "contar()"></button>
+        </div>
+        <!-- Cuadro de la esquina -->
+        <div class="cuadro_9">
+            <p id="cuadro_9">
+                <script>
+                    document.write(Punteo);
+                </script>
+            </p>
+        </div>
+    </div>
+    </div>   
+</body>
+</html>
